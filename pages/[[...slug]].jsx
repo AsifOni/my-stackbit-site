@@ -37,11 +37,15 @@ export default function ComposablePage({ page }) {
           <SearchBar />
 
           <div className="md:container md:mx-auto mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
-            <p>Hello man</p>
-
             {(page.sections || []).map((section, idx) => {
               const Component = componentMap[section.type];
-              return <Component key={idx} {...section} />;
+
+              if (!Component) return;
+              return (
+                <div className='py-[50px]'>
+                  <Component key={idx} {...section} />
+                </div>
+              );
             })}
           </div>
         </main>

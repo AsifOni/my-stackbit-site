@@ -17,7 +17,7 @@ export const Navbar = () => {
                 <li>
                   <a
                     href="#"
-                    className="block py-2 text-caa-dark-blue text-base font-semibold border-b-2 border-solid"
+                    className="block py-2 text-caa-dark-blue text-base font-semibold border-b-2 border-solid border-caa-dark-blue"
                     aria-current="page"
                   >
                     View Benefits
