@@ -3,6 +3,7 @@ import { Hero } from '../components/Hero.jsx';
 import { Navbar } from '../components/Navbar.jsx';
 import { SearchBar } from '../components/SearchBar.jsx';
 import { ThreeColumnCard } from '../components/ThreeColumnCard.jsx';
+import { TwoColumnSection } from '../components/TwoColumnSection.jsx';
 import { Footer } from '../components/Footer.jsx';
 import { getPageFromSlug, getPagePaths } from '../utils/content.js';
 
@@ -21,7 +22,8 @@ const componentMap = {
   rewardsHero: Hero,
   rewardsCard: Card,
   threeColumnCardSection: ThreeColumnCard,
-  // stats: Stats,
+  twoColumnSection: TwoColumnSection,
+  // stats: Stats,twoColumnSection:
 };
 
 export default function ComposablePage({ page }) {
