@@ -1,0 +1,30 @@
+{
+    "model": "rewardsHero",
+    "srcType": "contentful",
+    "srcProjectId": "wzdhzx28va0n",
+    "presets": [
+        {
+            "label": "Banner",
+            "locale": null,
+            "metadata": {
+                "categories": [
+                    "Hero"
+                ],
+                "canDelete": true
+            },
+            "data": {
+                "id": "hero-test",
+                "img": {
+                    "$$ref": "5HiCWMceUKdbgOp4AuMm5c",
+                    "$$type": "__image_model"
+                },
+                "heading": "Save Money on Everyday Purchases.",
+                "headingAs": null,
+                "body": "Your CAA Membership is the key to exclusive deals from your favourite restaurants, retailers, hotels and more.",
+                "imgPosition": "left",
+                "imgAltText": null
+            },
+            "thumbnail": "images/rewards-hero-banner-55ea.png"
+        }
+    ]
+}
