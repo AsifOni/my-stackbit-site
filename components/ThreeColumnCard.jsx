@@ -10,9 +10,21 @@ export const ThreeColumnCard = (props) => {
 
       <div className="flex flex-row flex-wrap md:flex-nowrap md:space-x-5">
         {cardData?.map((data, idx) => {
-          const { id, topImg, ...restProps } = data;
+          const { id, topImg, linkText, linkUrl, ...restProps } = data;
           const { src, alt } = topImg;
-          return <RewardsCard key={`card-data-${idx}`} topImg={src} imgSRText={alt} {...restProps} />;
+          return (
+            <RewardsCard
+              key={`card-data-${idx}`}
+              topImg={src}
+              imgSRText={alt}
+              footer={
+                <a className="mt-[1.125rem]" href={linkUrl}>
+                  {linkText}
+                </a>
+              }
+              {...restProps}
+            />
+          );
         })}
       </div>
     </div>
