@@ -2,7 +2,7 @@ export const Navbar = () => {
   return (
     <div className="w-fixed w-full flex-shrink flex-grow-0">
       <div className="sticky top-0 w-full h-full">
-        <nav className="bg-white dark:bg-gray-900 w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600">
+        <nav className="bg-white w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600">
           <div className="flex flex-wrap items-center justify-between p-4">
             <a href="https://www.caasco.com//" className="flex items-center">
               <img src="CAALogo.svg" className="w-15 h-15 mr-3" alt="CAA Logo" role="presentation" />
