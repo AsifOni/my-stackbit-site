@@ -16,7 +16,7 @@ export async function getStaticProps({ params }) {
 }
 
 const componentMap = {
-  hero: Hero,
+  rewardsHero: Hero,
   // stats: Stats,
 };
 
@@ -30,7 +30,7 @@ export default function ComposablePage({ page }) {
         <main role="main" className="w-full flex-grow">
           <SearchBar />
 
-          <div className='md:container md:mx-auto mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8'>
+          <div className="md:container md:mx-auto mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
             <p>Hello man</p>
 
             {(page.sections || []).map((section, idx) => {
