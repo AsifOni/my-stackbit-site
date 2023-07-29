@@ -10,6 +10,7 @@ module.exports = {
       },
       colors: {
         "caa-dark-blue": "#003087",
+        "caa-pink": "#F5F7FA",
         "white-100": "#FFFFFF",
         "neutral-black": "#020C27",
         "body-text": "#4D5056",
