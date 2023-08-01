@@ -65,7 +65,7 @@ export const SearchBar = () => {
         </div>
       </div>
 
-      <RButton label="Find Offers" btnStyle="font-semibold" />
+      <RButton label="Find Offers" btnStyle="font-semibold" sbDataAttr={{ label: 'label' }} />
     </div>
   );
 };
