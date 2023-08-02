@@ -25,7 +25,13 @@ export const Card = (props) => {
 
   return (
     <div data-sb-object-id={id} className={className}>
-      <RewardsCard topImg={src} imgSRText={alt} {...cardFooterProp} {...restProps} />
+      <RewardsCard
+        topImg={src}
+        imgSRText={alt}
+        {...cardFooterProp}
+        {...restProps}
+        sbDataAttr={{ body: 'body', title: 'title', subTitile: 'subTitle', intro: 'intro' }}
+      />
     </div>
   );
 };
