@@ -23,11 +23,9 @@ const componentMap = {
   rewardsCard: Card,
   threeColumnCardSection: ThreeColumnCard,
   twoColumnSection: TwoColumnSection,
-  // stats: Stats,twoColumnSection:
 };
 
 export default function ComposablePage({ page }) {
-  console.log('Y0 Y0', page);
   return (
     <>
       <div data-sb-object-id={page.id} className="w-full flex flex-col sm:flex-row flex-wrap flex-grow">
@@ -42,8 +40,8 @@ export default function ComposablePage({ page }) {
 
               if (!Component) return;
               return (
-                <div className='py-[50px]'>
-                  <Component key={idx} {...section} />
+                <div key={`${section.type}_${idx}`} className="py-[50px]">
+                  <Component {...section} />
                 </div>
               );
             })}

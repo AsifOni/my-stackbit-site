@@ -3,9 +3,9 @@ import { Button } from './Button';
 import Image from 'next/image';
 
 export const TwoColumnSection = (props) => {
-  const { img: masterImg, cardData } = props;
+  const { img: masterImg = {}, cardData={} } = props;
   const { src: masterSrc, alt: masterAlt } = masterImg;
-  const { id, topImg, buttonText, linkText, linkUrl, ...restProps } = cardData;
+  const { id, topImg={}, buttonText, linkText, linkUrl, ...restProps } = cardData;
   const { src, alt } = topImg;
 
   return (
