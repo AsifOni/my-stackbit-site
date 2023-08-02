@@ -9,7 +9,7 @@ export function ComponentRegistry() {
   return {
     button: RewardsButton,
     hero: RewardsHero,
-    rewardsCard: RewardsCard,
+    card: RewardsCard,
     threeColumnCardSection: ThreeColumnCard,
     twoColumnSection: TwoColumnSection,
   };
