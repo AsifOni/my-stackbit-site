@@ -1,11 +1,8 @@
-import { Card } from '../components/Card.jsx';
-import { Hero } from '../components/Hero.jsx';
 import { Navbar } from '../components/Navbar.jsx';
 import { SearchBar } from '../components/SearchBar.jsx';
-import { ThreeColumnCard } from '../components/ThreeColumnCard.jsx';
-import { TwoColumnSection } from '../components/TwoColumnSection.jsx';
 import { Footer } from '../components/Footer.jsx';
 import { getPageFromSlug, getPagePaths } from '../utils/content.js';
+import { ComponentRegistry } from '../utils/registry.js';
 
 export async function getStaticPaths() {
   const paths = await getPagePaths();
@@ -18,12 +15,7 @@ export async function getStaticProps({ params }) {
   return { props: { page } };
 }
 
-const componentMap = {
-  rewardsHero: Hero,
-  rewardsCard: Card,
-  threeColumnCardSection: ThreeColumnCard,
-  twoColumnSection: TwoColumnSection,
-};
+const componentMap = ComponentRegistry();
 
 export default function ComposablePage({ page }) {
   return (
