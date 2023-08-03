@@ -49,7 +49,7 @@ function mapEntry(entry) {
   return {
     id,
     type,
-    ...Object.fromEntries(Object.entries(entry.fields).map(([key, value]) => [key, parseField(value)])),
+    ...Object.fromEntries(Object.entries(entry?.fields || {}).map(([key, value]) => [key, parseField(value)])),
   };
 }
 
