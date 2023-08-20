@@ -1,4 +1,4 @@
-import { Card as RewardsCard } from 'ccg-rewards';
+import { Card as RewardsCard } from 'ccgx-rewards';
 
 import { Button } from './Button';
 

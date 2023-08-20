@@ -1,4 +1,4 @@
-import { Button as RewardsButton } from 'ccg-rewards';
+import { Button as RewardsButton } from 'ccgx-rewards';
 
 export const Button = (props) => {
   const { label, id } = props;

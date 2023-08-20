@@ -1,4 +1,4 @@
-import { Button as RButton } from 'ccg-rewards';
+import { Button as RButton } from 'ccgx-rewards';
 
 export const SearchBar = () => {
   return (

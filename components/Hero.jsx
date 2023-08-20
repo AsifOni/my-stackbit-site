@@ -1,4 +1,4 @@
-import { Hero as RewardsHero } from 'ccg-rewards';
+import { Hero as RewardsHero } from 'ccgx-rewards';
 
 export const Hero = (props) => {
   const { id, img = {}, ...restProps } = props;
