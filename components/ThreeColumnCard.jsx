@@ -5,6 +5,7 @@ export const ThreeColumnCard = (props) => {
     <div className="md:container mx-auto pad my-8" data-sb-object-id={props.id}>
       <RewardsThreeColumnCard
         {...props}
+        containerStyle='custom-threeColumnCard'
         sbDataAttr={{
           title: 'title',
           subText: 'subText',

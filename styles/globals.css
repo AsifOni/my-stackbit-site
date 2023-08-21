@@ -5,13 +5,57 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+    font-family: 'Inter';
+}
+
 .bg-pattern {
     background-image: url('../public/Pattern.svg');
     background-repeat: repeat-x;
     width: 100%;
     height: 60px;
 }
+
 .benefit-hero img {
     width: 564px !important;
     height: 541px;
+}
+
+.custom-threeColumnCard>div {
+    flex-wrap: wrap;
+    margin-top: 48px;
+    gap: 50px;
+}
+
+.custom-twoColumnSection {
+    flex-wrap: wrap;
+    gap: 50px
+}
+
+@media (min-width: 768px) {
+    .custom-threeColumnCard>div {
+        flex-wrap: nowrap;
+    }
+
+    .custom-threeColumnCard>h4 {
+        width: 40%;
+        margin-bottom: 12px;
+    }
+
+    .custom-threeColumnCard>p {
+        margin-bottom: 0px;
+        max-width: 50%;
+    }
+
+    .custom-threeColumnCard h2 {
+        width: 65%;
+    }
+
+    .custom-twoColumnSection {
+        flex-wrap: nowrap;
+    }
+
+    .custom-twoColumnSection .body-text {
+        width: 55%;
+    }
 }
